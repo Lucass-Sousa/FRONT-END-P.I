@@ -21,27 +21,25 @@
             </figure>
             <h3>Robson Brito</h3>
         </div>
-        <div class="navegação-user">
-            <nav class="lista-nav" >
-                <ul class="items-nav">
-                    <li>
-                        <a href="#pulseira-info">Pulseira</a>
-                    </li>
-                    <li>
-                        <a href="#locais">Locais</a>
-                    </li>
-                    <li>
-                        <a href="#dispositivos">Dispositivos IoT</a>
-                    </li>
-                    <li>
-                        <a href="#emergencia">Contatos de Urgência</a>
-                    </li>
-                    <li>
-                        <a href="#configuracoes">Configurações</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="lista-nav" >
+            <ul class="items-nav">
+                <li>
+                    <a href="#pulseira-info">Pulseira</a>
+                </li>
+                <li>
+                    <a href="#locais">Locais</a>
+                </li>
+                <li>
+                    <a href="#dispositivos">Dispositivos IoT</a>
+                </li>
+                <li>
+                    <a href="#emergencia">Contatos de Urgência</a>
+                </li>
+                <li>
+                    <a href="#configuracoes">Configurações</a>
+                </li>
+            </ul>
+        </nav>
     </aside>
 
     <main class="all-info">
@@ -91,7 +89,7 @@
             <button type="submit" class="btn-att">Sincronizar Dados</button>
         </section>
 
-        <section class="section-box" id="dispositivos">
+        <section class="section-box" id="tecnologias">
                 <div class="text">
                     <h3 class="title">Gerenciar Dispositivos IoT</h3>
                     <p class="subtitle">Adicione e gerencie seus dispositivos IoT no sistema:</p>
@@ -118,8 +116,8 @@
                             <select id="local-associado" name="local-associado">
                             <option value="sala">Sala de Estar</option>
                             <option value="quarto">Quarto</option>
-                            <option value="quarto">Cozinha</option>
-                            <option value="quarto">Garagem</option>
+                            <option value="cozinha">Cozinha</option>
+                            <option value="garagem">Garagem</option>
                             </select>
                             <button type="submit" class="btn">Adicionar Dispositivo</button>
                     </form>
@@ -162,11 +160,9 @@
                 </div>
                 <form class="add-dispositivo">
                         <label for="dispositivo">Nome do Local:</label>
-                        <input type="text" id="dispositivo" name="dispositivo" placeholder="Ex: Sala de Estar" required>
-                        
+                        <input type="text" id="nome-dispo" name="dispositivo" placeholder="Ex: Sala de Estar" required>
                         <label for="descricao">Descrição:</label>
                         <textarea id="descricao" name="descricao" rows="3" placeholder="Ex: Local principal para monitoramento"></textarea>
-                        
                         <button type="submit" class="btn">Adicionar Local</button>
                 </form>
             </div>
